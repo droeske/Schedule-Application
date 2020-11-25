@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.CustomerInfoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe2e5b4" height="294.0" stroke="BLACK" strokeType="INSIDE" width="727.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="230.0" layoutX="173.0" layoutY="24.0" opacity="0.6" stroke="#282897" strokeType="INSIDE" width="527.0" />
+      <Label layoutX="363.0" layoutY="38.0" prefHeight="30.0" prefWidth="198.0" text="Customer Details">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="customercity" disable="true" layoutX="23.0" layoutY="243.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#setCountry" opacity="0.0" prefHeight="26.0" prefWidth="149.0" />
+      <Label layoutX="365.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="75.0" text="Id:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="75.0" text="Zip Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="136.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="75.0" text="Phone:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="196.0" layoutY="43.0" prefHeight="20.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addressLabel" layoutX="196.0" layoutY="68.0" prefHeight="26.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="cityShownLabel" layoutX="196.0" layoutY="99.0" prefHeight="26.0" prefWidth="136.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="postalcodeLabel" layoutX="462.0" layoutY="110.0" prefHeight="26.0" prefWidth="136.0" />
+      <Label fx:id="countryLabel" layoutX="196.0" layoutY="128.0" prefHeight="26.0" prefWidth="110.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="phonenumberLabel" layoutX="462.0" layoutY="141.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label fx:id="idLabel" layoutX="462.0" layoutY="80.0" prefHeight="26.0" prefWidth="122.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="177.0" layoutX="23.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="136.0">
+         <fill>
+            <LinearGradient endX="0.874045867046327" endY="0.7862595547246569" startX="0.3435114412817336" startY="0.36259541984732824">
+               <stops>
+                  <Stop color="#c7cfd6da" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Line endX="226.00006103515625" endY="7.62939453125E-6" layoutX="454.0" layoutY="68.0" startX="-100.0" stroke="#3315bd" />
+   </children>
+</AnchorPane>

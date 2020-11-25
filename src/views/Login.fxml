@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LoginController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="230.0" opacity="0.41" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.9045801544917449" startY="0.019083969465648866">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#60676ec7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" fill="WHITE" height="79.0" layoutX="7.0" layoutY="84.0" opacity="0.66" stroke="#3350a2" strokeType="INSIDE" width="585.0" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" prefHeight="18.0" prefWidth="84.0" />
+      <Label layoutX="358.0" layoutY="14.0" prefHeight="46.0" prefWidth="135.0" text="Schedule">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+         <effect>
+            <Glow level="0.6" />
+         </effect>
+      </Label>
+      <TextField fx:id="userTextField" layoutX="238.0" layoutY="93.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label fx:id="usernameLabel" layoutX="123.0" layoutY="96.0" prefHeight="20.0" prefWidth="96.0" text="Username" />
+      <Label fx:id="passwordLabel" layoutX="123.0" layoutY="131.0" prefHeight="20.0" prefWidth="96.0" text="Password" />
+      <Button fx:id="loginButton" layoutX="483.0" layoutY="184.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogin" prefHeight="27.0" prefWidth="102.0" style="-fx-background-radius: 3; -fx-border-radius: 3; -fx-background-color: #cfcfcf, linear-gradient(#cfcfcf 70%, white 160%), radial-gradient(center 50% -40%, radius 200%, WHITE 15%, rgba(230,230,230,0) 50%);">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <PasswordField fx:id="passTextField" layoutX="238.0" layoutY="128.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label fx:id="mainMessage" layoutX="14.0" layoutY="59.0" prefHeight="27.0" prefWidth="332.0" textFill="#312f2f">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="27.0" prefHeight="46.0" prefWidth="109.0" text="Program">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.78" />
+         </effect>
+      </Label>
+    </children>
+</AnchorPane>

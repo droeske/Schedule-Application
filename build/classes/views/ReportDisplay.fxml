@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ReportDisplayController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe2e5b5" height="710.0" stroke="BLACK" strokeType="INSIDE" width="745.0" />
+      <Label fx:id="reportLabel" layoutX="103.0" layoutY="29.0" prefHeight="54.0" prefWidth="539.0">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="reportTextArea" editable="false" layoutX="13.0" layoutY="87.0" prefHeight="610.0" prefWidth="722.0" />
+   </children>
+</AnchorPane>
